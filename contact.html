@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact HotelDesk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <div class="brand-mark">H</div>
+        <div class="brand-text">
+          <strong>HotelDesk</strong>
+          <span>Hotel Operations System</span>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="product.html">Product</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">About</a>
+        <a href="updates.html">Updates</a>
+        <a href="contact.html" class="nav-cta">Request Demo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--inner">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content hero-content--inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Contact</p>
+          <h1>
+            Let’s see how
+            <span>HotelDesk fits your hotel.</span>
+          </h1>
+          <p class="hero-text">
+            Tell us a little about your hotel and current workflow.
+            The goal is to understand your structure and show you how HotelDesk
+            can improve room control, guest flow, payments, and daily operations.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split-section">
+
+        <!-- Left copy -->
+        <div class="split-copy">
+          <p class="eyebrow">Request a Demo</p>
+          <h2>Start with your hotel reality.</h2>
+          <p>
+            Every hotel has its own room structure, staff flow, and operational challenges.
+            The more we understand your setup, the better the demo and conversation will be.
+          </p>
+          <p>
+            This is not a generic software pitch. It is a practical walkthrough built around
+            how your hotel works today and how it can work better.
+          </p>
+        </div>
+
+        <!-- Right feature card / buttons + form -->
+        <div class="feature-card">
+
+          <!-- Action buttons -->
+          <div class="contact-actions" style="margin-bottom: 20px; display: flex; gap: 10px;">
+            <button id="btnRequestDemo" class="button button-primary">
+              Request a Demo
+            </button>
+            <a id="btnWhatsapp" href="#" target="_blank" class="button-whatsapp">
+              Chat on WhatsApp
+            </a>
+          </div>
+
+          <!-- Form -->
+          <form id="enquiryForm" class="contact-form" action="#" method="post">
+            <div class="form-group">
+              <label for="hotel-name">Hotel Name</label>
+              <input type="text" id="hotel-name" name="hotel-name" placeholder="Enter hotel name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-name">Your Name</label>
+              <input type="text" id="contact-name" name="contact-name" placeholder="Enter your name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required />
+            </div>
+
+            <div class="form-group">
+              <label for="location">Hotel Location</label>
+              <input type="text" id="location" name="location" placeholder="City / State" required />
+            </div>
+
+            <div class="form-group">
+              <label for="rooms">Number of Rooms</label>
+              <input type="text" id="rooms" name="rooms" placeholder="e.g. 12, 25, 40" required />
+            </div>
+
+            <div class="form-group">
+              <label for="current-system">Current System</label>
+              <select id="current-system" name="current-system">
+                <option value="">Select current method</option>
+                <option>Notebook / Paper Records</option>
+                <option>Excel / Spreadsheet</option>
+                <option>WhatsApp / Manual Coordination</option>
+                <option>Existing Software</option>
+                <option>No Structured System</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="challenge">Biggest Challenge</label>
+              <select id="challenge" name="challenge">
+                <option value="">Select main challenge</option>
+                <option>Room tracking confusion</option>
+                <option>Payment tracking issues</option>
+                <option>Staff coordination problems</option>
+                <option>Receipt and record keeping</option>
+                <option>Overall operational control</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Extra Details</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Tell us anything important about your workflow, staff structure, or current process."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="button button-primary">Send Request</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <strong>HotelDesk</strong>
+        <p>Modern hotel operations system.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="product.html">Product</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">About</a>
+        <a href="updates.html">Updates</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS links -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="contact.js"></script>
+</body>
+</html>
